@@ -37,7 +37,7 @@ string totalc;
 
 
 
-int  numlineas(int a){
+int  numlineas(){
 	int lin=0;
  try{
     				ifstream lectura;
@@ -95,7 +95,7 @@ int main()
 				
 		ifstream lectura;
 		lectura.open(datos,ios::in);
-			int indice=numlineas(indice);
+			int indice=numlineas();
 
 		int a1=0;
 			string peso[indice],edad[indice],altura[indice],departamento[indice];
@@ -179,7 +179,7 @@ int main()
 				 mostrarregistro();
 				 float sumaedad=0,sumapeso,sumaaltura,promedad,prompeso,promaltura;
 				 ifstream principal; 
-			int	 cantidaddatos= numlineas(cantidaddatos);
+			int	 cantidaddatos= numlineas();
 	principal.open(datos,ios::in);
 				 string edad ,peso,altura,departamento;
 
